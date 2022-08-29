@@ -5,6 +5,66 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        .button {
+          padding: 15px 25px;
+          font-size: 24px;
+          text-align: center;
+          cursor: pointer;
+          outline: none;
+          color: #fff;
+          background-color: #04AA6D;
+          border: none;
+          border-radius: 15px;
+          box-shadow: 0 9px #999;
+        }
+        
+        .button:hover {background-color: #3e8e41}
+        
+        .button:active {
+          background-color: #3e8e41;
+          box-shadow: 0 5px #666;
+          transform: translateY(4px);
+        }
+        .button2 {
+            border-radius: 4px;
+            background-color: #f4511e;
+            border: none;
+            color: #FFFFFF;
+            text-align: center;
+            font-size: 28px;
+            padding: 20px;
+            width: 200px;
+            transition: all 0.5s;
+            cursor: pointer;
+            margin: 5px;
+        }
+
+        .button2 span {
+            cursor: pointer;
+            display: inline-block;
+            position: relative;
+            transition: 0.5s;
+        }
+
+        .button2 span:after {
+            content: '\00bb';
+            position: absolute;
+            opacity: 0;
+            top: 0;
+            right: -20px;
+            transition: 0.5s;
+        }
+
+        .button2:hover span {
+            padding-right: 25px;
+        }
+
+        .button2.button2 span:after {
+            opacity: 1;
+            right: 0;
+        }
+    </style>
 </head>
 <body>
     <h1>RECURSOS PARA DESARROLLADORES</h1>
@@ -44,9 +104,38 @@
             <tr>
                 <td>html</td>
                 <td>Representa la raiz del documento HTML</td>
-                <td><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/html" target="_blank">Documentacion</a></td>
+                <td class="test"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/Heading_Elements" target="_blank">Documentacion</a></td>
+            </tr>
+
+            <tr>
+                <td>H1</td>
+                <td>Representa los niveles de seccion</td>
+                <td class="test"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/html" target="_blank">Documentacion</a></td>
+            </tr>
+
+            <tr>
+                <td>Section</td>
+                <td>Representa una seccion generica de un documento</td>
+                <td class="test"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/section" target="_blank">Documentacion</a></td>
             </tr>
         </tbody>
     </table>
+    <hr>
+    <table>
+        <thead>
+            <tr>
+                <th>
+                    <button class="button">Click Me</button>
+                </th>
+                <th>
+                    <button class="button2"><span>Hover </span></button>
+                </th>
+                <th>
+                    <button class="button">Click Me</button>
+                </th>
+            </tr>
+        </thead>
+    </table>
+
 </body>
 </html>
