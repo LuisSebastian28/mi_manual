@@ -1,31 +1,138 @@
+footer{
+    color: aliceblue;
+}
+img{
+    height: 500px;
+    width: 250px;
+}
+
+button{
+    cursor: pointer;
+}
+
 body{
-    background-color: #632432;
+    background-color: rgb(15, 42, 58);
     font-family: Arial;
 }
 
-#main-container{
-    margin: 150px auto;
-    width: 600px;
+h2,h3{
+    color: aliceblue;
+    padding: 0 5%;
+    box-sizing: border-box;
+    height: 50px;
+    transition: 0.5s;
+    align-items: center;
+    display: flex;
+
 }
+
+h1{
+    color: aliceblue;
+}
+
+header{
+    background-color: black;
+    height: 70px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5%;
+    box-sizing: border-box;
+    height: 100px;
+    transition: 0.5s;
+    margin: 0;
+}
+
+.main-menu{
+    display: flex;
+    justify-content: left;
+    align-items: left;
+    list-style: none;
+}
+
+.menu-item{
+    margin: 0 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.5s;
+    color: #f2f2f2;
+}
+
+.conteiner{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.conteiner-CSS{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 92px;
+    margin-right: 92px;
+}
+
+
 table{
-    background-color: white;
+    background-color: rgb(255, 255, 255);
     text-align: left;
     border-collapse: collapse;
-    width: 100%;
 }
 th, td{
     padding: 20px;
 }
 
 thead{
-    background-color: #256355;
-    border-bottom: solid 5px #0F362D;
+    background-color: #10ada0;
+    border-bottom: solid 5px #277083;
     color: white;
 }
 tr:nth-child(even){
     background-color: #ddd;
 }
 tr:hover td {
-    background-color: #369681;
+    background-color: #08a3be;
     color: white;
+}
+p{
+    color: white;
+    padding: 0 5%;
+    height: 10px;
+    transition: 0.5s;
+    align-items: center;
+    display:flex;
+}
+
+.prac0{
+    font-family: 'Open Sans', sans-serif;
+}
+
+.prac1{
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    display: flex;
+    color: cadetblue;
+}
+
+.prac2{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 30px;
+    display: flex;
+    color: red;
+}
+
+.prac3{
+    font-family: 'Oswald', sans-serif;
+    font-size: 40px;
+    display: flex;
+    color: aqua;
+
+}
+
+.ejemplos{
+    display:flex;
+    flex-direction: column;
 }
