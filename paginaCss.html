@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manual TecnoWeb</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+        <header>
+            <div>
+                <h1>Manual TecnoWeb</h1>
+            </div>
+            <nav class="main-menu">
+                <a href="index.html" class="menu-item">HOME</a>
+                <a href="paginaHtml.html" class="menu-item">HTML</a>
+                <a href="paginaCss.html" class="menu-item">CSS</a>
+                <a href="practicaCss.html" class="menu-item">PRACTICA CSS</a>
+            </nav>
+        </header>
+        <hr>
+    <h2>CSS</h2>
+    <h2>COLORES</h2>
+    <p>
+    Para que nuestros sitios se llenen de colores, necesitamos un manera de establecer los valores de estos colores.
+    </p>
+    <div class="conteiner-CSS">
+        <table>
+            <thead>
+                <tr>
+                    <th>Nombre</th>
+                    <th>Descripcion</th>
+                    <th>Enlace</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>COLOR</td>
+                    <td>La propiedad de CSS color selecciona el valor de color de primer plano del contenido de elemento de texto y decoraciones de texto. Tambien establece el valor currentcolor (en-US) que se puede usar como un valor indirecto en otras propiedades, y es el valor predeterminado para otras propiedades de color, como border-color.
+                    .</td>
+                    <td><a href="https://developer.mozilla.org/es/docs/Web/CSS/color" target="_blank">Ir a pagina</a></td>
+                </tr>
+                <tr>
+                    <td>RGB</td>
+                    <td>Red Green Blue (RGB) es un modelo de color que representa los colores como mezclas de tres componentes subyacentes (o canales), rojo, verde y azul. Cada color se describe mediante una secuencia de tres números (normalmente entre 0.0 y 1.0, o entre 0 y 255) que representan las diferentes intensidades (o contribuciones) de rojo, verde y azul para determinar el color final.</td>
+                    <td><a href="https://developer.mozilla.org/es/docs/Glossary/RGB" target="_blank">Ir a pagina</a></td>
+                </tr>
+                <tr>
+                    <td>RGBA</td>
+                    <td>Podemos definir la transparencia de un color usando la función rgba, esta función es idéntica a la función rgb, pero con un parámetro adicional denominado opacidad,  para especificar la transparencia.
+                    </td>
+                    <td><a href="https://www.w3schools.com/cssref/func_rgba.asp" target="_blank">Ir a pagina</a></td>
+                </tr>
+                <tr>
+                    <td>HSL</td>
+                    <td>La notación funcional hsl() expresa un color sRGB según sus componentes de tono, saturación y luminosidad. Un componente alfa opcional representa la transparencia del color.
+                    </td>
+                    <td><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/color_value/hsl" target="_blank">Ir a pagina</a></td>
+                </tr>
+                <tr>
+                    <td>HSLA</td>
+                    <td>The hsla() functional notation expresses a given color according to its hue, saturation, and lightness components. An optional alpha component represents the color's transparency.
+                    </td>
+                    <td><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/color_value/hsla" target="_blank">Ir a pagina</a></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <h2>SELECTORES</h2>
+    <p>
+        Permiten seleccionar elementos del documento a los que queremos aplicar estilos.
+    </p>
+    <div class="conteiner-CSS">
+        <table>
+            <thead>
+                <tr>
+                    <th>Nombre</th>
+                    <th>Descripcion</th>
+                    <th>Enlace</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>SELECTOR UNIVERSAL(*)</td>
+                    <td>The universal selector is indicated by an asterisk (*). It selects everything in the document (or inside the parent element if it is being chained together with another element and a descendant combinator). In the following example, we use the universal selector to remove the margins on all elements. Instead of the default styling added by the browser — which spaces out headings and paragraphs with margins — everything is close together.
+                    </td>
+                    <td><a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Selectors/Type_Class_and_ID_Selectors#the_universal_selector" target="_blank">Ir a pagina</a></td>
+                </tr>
+                <tr>
+                    <td>SELECTORES DE TIPO (p)</td>
+                    <td>A type selector is sometimes referred to as a tag name selector or element selector because it selects an HTML tag/element in your document. In the example below, we have used the span, em and strong selectors.</td>
+                    <td><a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Selectors/Type_Class_and_ID_Selectors#type_selectors" target="_blank">Ir a pagina</a></td>
+                </tr>
+                <tr>
+                    <td>SELECTORES DE TIPO (p)</td>
+                    <td>A type selector is sometimes referred to as a tag name selector or element selector because it selects an HTML tag/element in your document. In the example below, we have used the span, em and strong selectors.</td>
+                    <td><a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Selectors/Type_Class_and_ID_Selectors#type_selectors" target="_blank">Ir a pagina</a></td>
+                </tr>
+                <tr>
+                    <td>SELECTOR DE CLASE (.foo)</td>
+                    <td>A type selector is sometimes referred to as a tag name selector or element selector because it selects an HTML tag/element in your document. In the example below, we have used the span, em and strong selectors.</td>
+                    <td><a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Selectors/Type_Class_and_ID_Selectors#type_selectors" target="_blank">Ir a pagina</a></td>
+                </tr>
+                <tr>
+                    <td>SELECTORES DE ID (#foo)</td>
+                    <td>An ID selector begins with a # rather than a dot character, but is used in the same way as a class selector. However, an ID can be used only once per page, and elements can only have a single id value applied to them. It can select an element that has the id set on it, and you can precede the ID with a type selector to only target the element if both the element and ID match. </td>
+                    <td><a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Selectors/Type_Class_and_ID_Selectors#id_selectors" target="_blank">Ir a pagina</a></td>
+                </tr>
+                <tr>
+                    <td>SELECTORES DE ATRIBUTO (a[foo])</td>
+                    <td>Permite seleccionar elementos en función de la presencia o del valor de un determinado atributo.</td>
+                    <td><a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Selectors#attribute_selectors" target="_blank">Ir a pagina</a></td>
+                </tr>
+                <tr>
+                    <td>PSEUDO-CLASSES</td>
+                    <td>A CSS pseudo-class is a keyword added to a selector that specifies a special state of the selected element(s). For example, :hover can be used to change a button's color when the user's pointer hovers over it.</td>
+                    <td><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-classes" target="_blank">Ir a pagina</a></td>
+                </tr>}
+                <tr>
+                    <td>PSEUDO- ELEMENTOS</td>
+                    <td>A CSS pseudo-element is a keyword added to a selector that lets you style a specific part of the selected element(s). For example, ::first-line can be used to change the font of the first line of a paragraph.</td>
+                    <td><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-elements" target="_blank">Ir a pagina</a></td>
+                </tr>
+                <tr>
+                    <td>!IMPORTANT</td>
+                    <td>A ! delimiter followed by the important keyword marks the declaration as important. The !important flag alters the rules selecting declarations inside the cascade. A declaration that is not important is called normal.</td>
+                    <td><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/important" target="_blank">Ir a pagina</a></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <h2>LONGITUDES</h2>
+    <p>
+        En CSS un longitud es una número y una unidad
+    </p>
+    <h3>UNIDADES ABSOLUTAS</h3>
+    <div class="conteiner-CSS">
+        <table>
+            <thead>
+                <tr>
+                    <th>Unidad</th>
+                    <th>Nombre</th>
+                    <th>Esquivalente a</th>
+                    <th>Enlace</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>PX</td>
+                    <td>Pixel</td>
+                    <td>0.265 mm</a></td>
+                    <td><a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Values_and_units" target="_blank">Ir a pagina</a></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <h3>UNIDADES RELATIVAS</h3>
+    <div class="conteiner-CSS">
+        <table>
+            <thead>
+                <tr>
+                    <th>Unidad</th>
+                    <th>Relativo a</th>
+                    <th>Enlace</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>rem</td>
+                    <td>Relativo al tamaño de la letra del elemento root (El elemento html)</td>
+                    <td><a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Values_and_units" target="_blank">Ir a pagina</a></td>
+                </tr>
+                <tr>
+                    <td>%</td>
+                    <td>Relativo a otro valor. Si establecemos el valor de la propiedad font-size, será un porcentaje del font-size del elemento padre.
+                        Si usamos un porcentaje para establecer el valor del elemento width, será un porcentaje del width del elemento padre.  
+                        </td>
+                        <td><a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Values_and_units" target="_blank">Ir a pagina</a></td>
+                </tr>
+                <tr>
+                    <td>VW</td>
+                    <td>Relativo al ancho del viewport</td>
+                    <td><a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Values_and_units" target="_blank">Ir a pagina</a></td>
+                </tr>
+                <tr>
+                    <td>VH</td>
+                    <td>Relativo al alto del viewport
+                    </td>
+                    <td><a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Values_and_units" target="_blank">Ir a pagina</a></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+<hr>
+<footer>LUIS SEBASTIAN SALAZAR VILLEGAS</footer>
+</html>
