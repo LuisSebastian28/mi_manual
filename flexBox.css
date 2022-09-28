@@ -1,19 +1,10 @@
-footer{
-    color: aliceblue;
-}
-img{
-    height: 500px;
-    width: 250px;
-}
-
-button{
-    cursor: pointer;
-}
-
 body{
     background-color: rgb(15, 42, 58);
     font-family: Arial;
+    display: flex;
+    flex-direction: column;
 }
+
 
 h2,h3{
     color: aliceblue;
@@ -26,8 +17,18 @@ h2,h3{
 
 }
 
-h1{
+footer{
     color: aliceblue;
+}
+
+h2,h3{
+    color: aliceblue;
+    padding: 0 5%;
+    box-sizing: border-box;
+    height: 50px;
+    transition: 0.5s;
+    align-items: center;
+    display: flex;
 }
 
 header{
@@ -42,6 +43,19 @@ header{
     height: 100px;
     transition: 0.5s;
     margin: 0;
+}
+
+h1{
+    color: aliceblue;
+}
+
+p{
+    color: white;
+    padding: 0 5%;
+    height: 10px;
+    transition: 0.5s;
+    align-items: center;
+    display:flex;
 }
 
 .main-menu{
@@ -75,7 +89,6 @@ header{
     margin-right: 92px;
 }
 
-
 table{
     background-color: rgb(255, 255, 255);
     text-align: left;
@@ -98,43 +111,13 @@ tr:hover td {
     color: white;
 }
 
-
-.prac0{
-    font-family: 'Open Sans', sans-serif;
+.imagenes{
+    display: flex;
+    justify-content: center;
 }
 
-.prac1{
-    font-family: 'Roboto', sans-serif;
-    font-size: 20px;
-    color: cadetblue;
-    padding: 0 5%;
-
-}
-
-.prac2{
-    font-family: 'Open Sans', sans-serif;
-    font-size: 30px;
-    color: red;
-    padding: 0 5%;
-
-}
-
-.prac3{
-    font-family: 'Oswald', sans-serif;
-    font-size: 40px;
-    color: aqua;
-    padding: 0 5%;
-
-
-}
 
 .ejemplos{
     display:flex;
     flex-direction: column;
 }
-
-.imagenes{
-    display: flex;
-    align-items: center;
-}
-
