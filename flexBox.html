@@ -5,7 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Manual TecnoWeb</title>
-    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="flexBox.css">
+    <link rel="stylesheet" href="auxiliar.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,600&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
@@ -27,24 +28,272 @@
         </nav>
     </header>
     <hr>
-    <div class="ejemplos">
-        <h1 class="prac0">INICIO DEL TEXTO</h1>
-        <p class="prac1"> 
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis culpa officia vero 
-            aliquam animi exercitationem reprehenderit, dicta at distinctio, unde veritatis non 
-            ducimus odio similique recusandae sint? Numquam, obcaecati officia?
+    <h2>FLEXBOX</h2>
+    <div class="seccion1">
+        <h2>CONCEPTOS IMPORTANTES</h2>
+        <p>
+            La propiedad display con valor flex o inline-flex nos permite establecer un contenedor flexible. Los hijos del contenedor flexible se llaman elementos flexibles.
         </p>
-        <p class="prac2">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum alias, dolorem explicabo
-             veritatis impedit dicta est voluptatem consequatur vel sint eos quam sed magni, 
-             harum cupiditate ipsa ad. Nam, ipsa!
+        <div class="imagenes">
+            <img class="cont-flex" src="imagenes/contenedor_flexible.png" alt="#">
+            <img class="cont-flex" src="imagenes/contenedor_flexible_html.png" alt="#">
+        </div>
+        <h2>TERMINOS IMPORTANTES</h2>
+        <div class="imagenes">
+            <img class="cont-flex" src="imagenes/terminos_importantes.png" alt="#">
+        </div>
+        <h3>Eje principal(Anticucho de elementos flexibles)</h3>
+        <p>
+            Es un eje a lo largo del cual se disponen los elementos flexibles. No es necesariamente horizontal; depende de la propiedad flex-direction.
         </p>
-        <p class="prac3">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam voluptate dolorum 
-            nobis qui facilis fugiat quasi accusamus architecto quos aut voluptas dolorem odio 
-            repudiandae neque vel, quisquam saepe impedit porro.
+        <h3>Lado inicial del eje principal | Lado final del eje principal</h3>
+        <p>
+            Los elementos flexibles se colocan dentro del contenedor comenzando desde el Lado inicial del eje principal yendo al lado final del eje principal.
+        </p>
+        <h3>Lineas flexibles</h3>
+        <p>
+            Las líneas flexibles son construcciones imaginarias que alojan a los elementos flexibles. Pueden existir varias o una linea flexible dentro de un contenedor flexible.
+        </p>
+        <div class="imagenes">
+            <img class="cont-flex" src="imagenes/Lineas-flexibles.png" alt="#">
+        </div>
+        <h3>Eje transversal (Anticucho de lineas flexibles)</h3>
+        <p>
+            Es un eje a lo largo del cual se disponen las lineas flexibles. Es un eje perpendicular al eje principal.
+        </p>
+        <h3>Lado inicial del eje transversal | Lado final del eje transversal</h3>
+        <p>
+            Las líneas flexibles se colocan en el contenedor comenzando en el lado inicial del eje transversal yendo hacia el lado final del eje transversal.
+        </p>
+        <h3>Tamaño principal</h3>
+        <p>
+            El tamaño principal de un contenedor o un elemento flexible es su ancho (width) cuando el eje principal es horizontal y es su alto (height) cuando el eje principal es vertical.
+        </p>
+        <h3>Tamaño transversal</h3>
+        <p>
+            El tamaño transversal de un contenedor o un elemento flexible es su alto (height) cuando el eje transversal es vertical y es su ancho (width) cuando el eje transversal es horizontal.
         </p>
     </div>
+    <h2>FLEXBOX: EJE PRINCPAL</h2>
+    <p>
+        La propiedad flex-direction permite establecer la dirección del eje principal del contenedor flexible. Los elementos flexibles se colocan a en la dirección del eje principal.
+    </p>
+    <div class="seccion2">
+        <h2>FLEXBOX: EJE PRINCPAL DE IZQUIERDA A DERECHA</h2>
+        <div class="imagenes">
+            <img class="cont-flex" src="imagenes/eje_principal_de izquierda_a_derecha.png" alt="#">
+            <img class="cont-flex" src="imagenes/eje_principal_de izquierda_a_derecha_html_css.png" alt="#">
+        </div>
+        <h2>FLEXBOX: EJE PRINCPAL DE DERECHA A IZQUIERDA</h2>
+        <div class="imagenes">
+            <img class="cont-flex" src="imagenes/eje_principal_de_derecha_a_izquierda.png" alt="#">
+            <img class="cont-flex" src="imagenes/eje_principal_de_derecha_a_izquierda_html_css.png" alt="#">
+        </div>
+        <h2>FLEXBOX: EJE PRINCIPAL DE ARRIBA A ABAJO</h2>
+        <div class="imagenes">
+            <img class="cont-flex" src="imagenes/eje_principal_de_arriba_a_abajo.png" alt="#">
+            <img class="cont-flex" src="imagenes/eje_principal_de_arriba_a_abajo_html_css.png" alt="#">
+        </div>
+        <h2>FLEXBOX: EJE PRINCIPAL DE ABAJO A ARRIBA</h2>
+        <div class="imagenes">
+            <img class="cont-flex" src="imagenes/eje_principal_de_abajo_a_arriba.png" alt="#">
+            <img class="cont-flex" src="imagenes/eje_principal_de_abajo_a_arriba_html_css.png" alt="#">
+        </div>
+    </div>
+    <h2>FLEXBOX: EJE TRANVERSAL</h2>
+    <p>
+        La propiedad flex-wrap controla si el contenedor flexible es de una sola línea o de varias líneas y la dirección del eje transversal, que determina la dirección en la que se alinean las líneas flexibles.
+    </p>
+    <div class="seccion3">
+        <h2>CONTENEDOR FLEXIBLE DE UNA SOLA LINEA (LOS ELEMENTOS FLEXIBLES SE COLOCAN DE IZQUIERDA A DERECHA)</h2>
+        <div class="imagenes">
+            <img class="cont-flex" src="imagenes/Una_sola_linea_izquierda_a_derecha.png" alt="#">
+            <img class="cont-flex" src="imagenes/Una_sola_linea_izquierda_a_derecha_html_css.png" alt="#">
+        </div>
+        <h2>CONTENEDOR FLEXIBLE DE UNA SOLA LINEA (LOS ELEMENTOS FLEXIBLES SE COLOCAN DE DERECHA A IZQUIERDA)</h2>
+        <div class="imagenes">
+            <img class="cont-flex" src="imagenes/Una_sola_linea_derecha_a_izquierda.png" alt="#">
+            <img class="cont-flex" src="imagenes/Una_sola_linea_derecha_a_izquierda_html_css.png" alt="#">
+        </div>
+        <h2>CONTENEDOR FLEXIBLE DE UNA SOLA LINEA (LOS ELEMENTOS FLEXIBLES SE COLOCAN DE ARRIBA A ABAJO)</h2>
+        <div class="imagenes">
+            <img class="cont-flex" src="imagenes/Una_sola_linea_arriba_a_abajo.png" alt="#">
+            <img class="cont-flex" src="imagenes/Una_sola_linea_arriba_a_abajo_html_css.png" alt="#">
+        </div>
+        <h2>CONTENEDOR FLEXIBLE DE UNA SOLA LINEA (LOS ELEMENTOS FLEXIBLES SE COLOCAN DE ABAJO A ARRIBA)</h2>
+        <div class="imagenes">
+            <img class="cont-flex" src="imagenes/Una_sola_linea_abajo_arriba.png" alt="#">
+            <img class="cont-flex" src="imagenes/Una_sola_linea_abajo_arriba_html_css.png" alt="#">
+        </div>
+        <h2>CONTENEDOR FLEXIBLE DE VARIAS LINEAS (LOS ELEMENTOS FLEXIBLES SE COLOCAN DE IZQUIERDA A DERECHA)</h2>
+        <div class="imagenes">
+            <img class="cont-flex" src="imagenes/varias_lineas_izquierda_a_derecha.png" alt="#">
+            <img class="cont-flex" src="imagenes/varias_lineas_izquierda_a_derecha_html_css.png" alt="#">
+        </div>
+        <h2>CONTENEDOR FLEXIBLE DE VARIAS LINEAS (LOS ELEMENTOS FLEXIBLES SE COLOCAN DE DERECHA A IZQUIERDA)</h2>
+        <div class="imagenes">
+            <img class="cont-flex" src="imagenes/varias_lineas_derecha_a_izquierda.png" alt="#">
+            <img class="cont-flex" src="imagenes/varias_lineas_derecha_a_izquierda_html_css.png" alt="#">
+        </div>
+        <h2>CONTENEDOR FLEXIBLE DE VARIAS LINEAS (LOS ELEMENTOS FLEXIBLES SE COLOCAN DE ARRIBA A ABAJO)</h2>
+        <div class="imagenes">
+            <img class="cont-flex" src="imagenes/varias_lineas_derecha_a_izquierda.png" alt="#">
+            <img class="cont-flex" src="imagenes/varias_lineas_derecha_a_izquierda_html_css.png" alt="#">
+        </div>
+        <h2>CONTENEDOR FLEXIBLE DE VARIAS LINEAS (LOS ELEMENTOS FLEXIBLES SE COLOCAN DE IZQUIERDA A DERECHA)</h2>
+        <div class="imagenes">
+            <img class="cont-flex" src="imagenes/varias_lineas_izquierda_a_derecha_2.png" alt="#">
+            <img class="cont-flex" src="imagenes/varias_lineas_izquierda_a_derecha_html_css_2.png" alt="#">
+        </div>
+        <h2>CONTENEDOR FLEXIBLE DE VARIAS LINEAS IZQUIERDA (LOS ELEMENTOS FLEXIBLES SE COLOCAN DE DERECHA A IZQUIERDA)</h2>
+        <div class="imagenes">
+            <img class="cont-flex" src="imagenes/varias_lineas_derecha_a_izquierda_2.png" alt="#">
+            <img class="cont-flex" src="imagenes/varias_lineas_derecha_a_izquierda_html_css_2.png" alt="#">
+        </div>
+        <h2>CONTENEDOR FLEXIBLE VARIAS LINEAS (LOS ELEMENTOS FLEXIBLES SE COLOCAN DE ARRIBA A ABAJO)</h2>
+        <div class="imagenes">
+            <img class="cont-flex" src="imagenes/varias_lineas_arriba_a_abajo_2.png" alt="#">
+            <img class="cont-flex" src="imagenes/varias_lineas_arriba_a_abajo_html_css_2.png" alt="#">
+        </div>
+        <h2>CONTENEDOR FLEXIBLE DE VARIAS LINEAS (LOS ELEMENTOS FLEXIBLES SE COLOCAN DE ABAJO A ARRIBA)</h2>
+        <div class="imagenes">
+            <img class="cont-flex" src="imagenes/varias_lineas_abajo_a_arriba_2.png" alt="#">
+            <img class="cont-flex" src="imagenes/varias_lineas_abajo_a_arriba_html_css_2.png" alt="#">
+        </div>
+    </div>
+    <h2>FLEXBOX: COLOCAR LINEAS</h2>
+    <p>
+        La propiedad align-content alinea líneas dentro de un contenedor flexible. . Existen seis valores posibles para esta propiedad.
+    </p>
+    <div class="seccion4">
+        <h2>FLEX-START</h2>
+        <p>
+            Las lineas se colocan a partir del lado inicial del eje transversal.
+        </p>
+        <div class="imagenes">
+            <img class="cont-flex" src="imagenes/flex-start.png" alt="#">
+            <img class="cont-flex" src="imagenes/flex-start_html_css.png" alt="#">
+        </div>
+        <h2>FLEX-END</h2>
+        <p>
+            Las lineas se desplazan al lado final del eje transversal.
+        </p>
+        <div class="imagenes">
+            <img class="cont-flex" src="imagenes/flex-end.png" alt="#">
+            <img class="cont-flex" src="imagenes/flex-end_html_css.png" alt="#">
+        </div>
+        <h2>SPACE-BETWEEN</h2>
+        <p>
+            La distancia entre cualquier par de líneas adyacentes es la misma. La primera línea se encuentra pegada al lado inicial del eje transversal y la última línea se encuentra pegada al lado final del eje transversal.
+        </p>
+        <div class="imagenes">
+            <img class="cont-flex" src="imagenes/space-between.png" alt="#">
+            <img class="cont-flex" src="imagenes/space-between_html_css.png" alt="#">
+        </div>
+        <h2>CENTER</h2>
+        <p>
+            Las líneas se colocan al centro del contenedor flexible con respecto al eje transversal. La distancia entre el lado inicial del eje transversal y la primera línea es la misma distancia que hay entre el lado final del eje transversal y la ultima línea.       
+        </p>
+        <div class="imagenes">
+            <img class="cont-flex" src="imagenes/center.png" alt="#">
+            <img class="cont-flex" src="imagenes/center_html_css.png" alt="#">
+        </div>
+        <h2>SPACE-AROUND</h2>
+        <p>
+            La distancia entre cualquier par de líneas adyacentes siempre es la misma. La distancia entre el lado inicial del eje transversal y la primera línea es la misma distancia que existe entre el lado final del eje transversal y la última línea, además esta distancia es la mitad de la distancia entre líneas adyacentes.        
+        </p>
+        <div class="imagenes">
+            <img class="cont-flex" src="imagenes/space-around.png" alt="#">
+            <img class="cont-flex" src="imagenes/space-around_html_css.png" alt="#">
+        </div>
+        <h2>STRETCH</h2>
+        <p>
+            Las líneas se estiran para ocupar el espacio restante. El espacio libre en el contenedor se divide por igual entre todas las líneas.
+        </p>
+        <div class="imagenes">
+            <img class="cont-flex" src="imagenes/stretch.png" alt="#">
+            <img class="cont-flex" src="imagenes/stretch_html_css.png" alt="#">
+        </div>
+    </div>
+    <h2>FLEXBOX: COLOCAR ELEMENTOS</h2>
+    <p>
+        La propiedad justify-content establece cómo se distribuyen los elementos flexibles en una línea flexible en la dirección del eje principal.
+    </p>
+    <div class="seccion5">
+        <h2>FLEX-START</h2>
+        <p>
+            Si el contenedor flexible es de una sola línea y es demasiado pequeño para contener todos los elementos, los elementos flexibles se desbordan en dirección del eje principal.
+        </p>
+        <div class="imagenes">
+            <img class="cont-flex" src="imagenes/justify-flex-start.png" alt="#">
+            <img class="cont-flex" src="imagenes/justify-flex-start_html_css.png" alt="#">
+        </div>
+        <h2>FLEX-END</h2>
+        <p>
+            Si el contenedor flexible es de una sola linea y es demasiado pequeño para contener todos los elementos, los elementos flexibles se desbordan en dirección contraria del eje principal.
+        </p>
+        <div class="imagenes">
+            <img class="cont-flex" src="imagenes/justify-flex-end.png" alt="#">
+            <img class="cont-flex" src="imagenes/justify-flex-end_html_css.png" alt="#">
+        </div>
+        <h2>CENTER</h2>
+        <p>
+            Si el contenedor flexible es de una sola línea y es demasiado pequeño para contener todos los elementos, los elementos flexibles se desbordan por igual en ambas direcciones.
+        </p>
+        <div class="imagenes">
+            <img class="cont-flex" src="imagenes/justify-center.png" alt="#">
+            <img class="cont-flex" src="imagenes/justify-center_html_css.png" alt="#">
+        </div>
+        <h2>SPACE-BETWEEN</h2>
+        <p>
+            Si el contenedor flexible es de una sola línea y es demasiado pequeño para contener todos los elementos, los elementos flexibles se desbordan por igual en ambas direcciones.
+        </p>
+        <div class="imagenes">
+            <img class="cont-flex" src="imagenes/justify-space-between.png" alt="#">
+            <img class="cont-flex" src="imagenes/justify-space-between_html_css.png" alt="#">
+        </div>
+        <h2>SPACE-AROUND</h2>
+        <p>
+            Si el contenedor flexible es demasiado pequeño para contener todos los elementos y es de una sola linea, los elementos flexibles se desbordan por igual en ambas direcciones.
+        </p>
+        <div class="imagenes">
+            <img class="cont-flex" src="imagenes/justify-space-around.png" alt="#">
+            <img class="cont-flex" src="imagenes/justify-space-around_html_css.png" alt="#">
+        </div>
+        <h2>STRETCH</h2>
+        <p>
+            Los elementos flexibles se estiran para ocupar todo el espacio disponible en la linea flexible en la direccion del eje transversal.
+        </p>
+        <div class="imagenes">
+            <img class="cont-flex" src="imagenes/justify-stretch.png" alt="#">
+            <img class="cont-flex" src="imagenes/justify-stretch_html_css.png" alt="#">
+        </div>
+        <h2>FLEX-START</h2>
+        <p>
+            Los elementos flexibles están pegados al borde de la línea flexible que se encuentra más cerca del lado inicial del eje transversal.
+        </p>
+        <div class="imagenes">
+            <img class="cont-flex" src="imagenes/justify-flex-end-2.png" alt="#">
+            <img class="cont-flex" src="imagenes/justify-flex-end_html_css_2.png" alt="#">
+        </div>
+        <h2>FLEX-END</h2>
+        <p>
+            Los elementos flexibles están pegados al borde de la línea flexible que se encuentra más cerca del lado final del eje transversal.
+        </p>
+        <div class="imagenes">
+            <img class="cont-flex" src="imagenes/justify-flex-end-2.png" alt="#">
+            <img class="cont-flex" src="imagenes/justify-flex-end_html_css_2.png" alt="#">
+        </div>
+        <h2>CENTER</h2>
+        <p>
+            La distancia entre el elemento flexible y los bordes de la línea flexible que son paralelos a los lados del eje transversal, es el mismo.
+        </p>
+        <div class="imagenes">
+            <img class="cont-flex" src="imagenes/justify-center-2.png" alt="#">
+            <img class="cont-flex" src="imagenes/justify-center_html_css_2.png" alt="#">
+        </div>
+    </div>
+    
 </body>
 <hr>
 <footer>LUIS SEBASTIAN SALAZAR VILLEGAS</footer>
